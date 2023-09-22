@@ -8,7 +8,6 @@ public class Main {
         frame.setMinimumSize(new Dimension(500, 300));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
-
         frame.setVisible(true);
 
     }
