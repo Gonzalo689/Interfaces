@@ -1,12 +1,13 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Vector;
 
 public class GestionDeContactos {
     private JPanel panel;
-    private JTable table1;
+    private JTable tabla;
     private JTextField textNombre;
     private JTextField textEmail;
     private JButton buttonAgregar;
@@ -24,7 +25,8 @@ public class GestionDeContactos {
         modeloTabla = new DefaultTableModel();
         modeloTabla.addColumn("Nombre");
         modeloTabla.addColumn("Email");
-        table1 = new JTable(modeloTabla);
+        this.tabla = new JTable(modeloTabla);
+
         buttonAgregar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
