@@ -12,7 +12,7 @@ public class Lista {
     public JPanel getPanel() {
         return panel;
     }
-   private DefaultListModel<String> listModel = new DefaultListModel<>();
+    private DefaultListModel<String> listModel = new DefaultListModel<>();
 
     public Lista(){
         list.setModel(listModel);
