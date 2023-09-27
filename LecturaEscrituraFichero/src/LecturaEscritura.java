@@ -9,6 +9,7 @@ public class LecturaEscritura {
 
     private JPanel panel;
     private JTextArea textArea;
+    private JScrollPane scrollpane;
 
     public JPanel getPanel() {
         return panel;
@@ -25,8 +26,6 @@ public class LecturaEscritura {
         JMenuBar menuBar = new JMenuBar();
         JMenu fileMenu = new JMenu("Archivo");
         JMenuItem openItem = new JMenuItem("Abrir");
-        frame.add(textArea);
-
         openItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -72,6 +71,8 @@ public class LecturaEscritura {
 
         menuBar.add(fileMenu);
         frame.setJMenuBar(menuBar);
+        frame.add(scrollpane);
+
 
     }
 }
