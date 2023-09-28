@@ -59,6 +59,7 @@ public class LecturaEscritura {
                         FileWriter newFile = new FileWriter(selectedFile);
                         newFile.write(textArea.getText());
                         newFile.close();
+                        textArea.setText("");
                     } catch (IOException ex) {
                         ex.printStackTrace();
                     }
