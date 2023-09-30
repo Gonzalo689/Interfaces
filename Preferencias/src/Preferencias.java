@@ -25,10 +25,10 @@ public class Preferencias {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JMenuBar menuBar = new JMenuBar();
         JMenu fileMenu = new JMenu("Archivo");
-        JMenuItem openItem = new JMenuItem("Guardar Preferencias");
+        JMenuItem pref = new JMenuItem("Guardar Preferencias");
         SpinnerNumberModel spinner2 = new SpinnerNumberModel(1,1,10,1);
         spinner1.setModel(spinner2);
-        fileMenu.add(openItem);
+        fileMenu.add(pref);
         menuBar.add(fileMenu);
 
         frame.setJMenuBar(menuBar);
@@ -56,7 +56,12 @@ public class Preferencias {
                 guardarPreferencias();
             }
         });
-
+        pref.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                guardarPreferencias();
+            }
+        });
 
     }
     public void guardarPreferencias(){
