@@ -68,7 +68,7 @@ public class InterfazContacto {
                 else
                     mensaje += "Genero: No seleccionado";
 
-                JOptionPane.showMessageDialog(panel, mensaje);
+                JOptionPane.showMessageDialog(panel, mensaje,"Contacto Completado", JOptionPane.DEFAULT_OPTION);
             }
         });
     }
