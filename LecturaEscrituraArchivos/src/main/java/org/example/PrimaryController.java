@@ -1,12 +1,22 @@
 package org.example;
 
-import java.io.IOException;
 import javafx.fxml.FXML;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
 
 public class PrimaryController {
 
     @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
+    private MenuItem btnAbrir;
+    @FXML
+    private TextArea textArea;
+    @FXML
+    private MenuBar menuArchivo;
+    @FXML
+    public void initialize(){
+
+        textArea.setText("Hola");
+
     }
 }
