@@ -22,7 +22,7 @@ public class PrimaryController {
     @FXML
     private TextArea textArea;
     @FXML
-    private MenuItem menuAbrir;
+        private MenuItem menuAbrir;
     @FXML
     private MenuItem menuGuardar;
     @FXML

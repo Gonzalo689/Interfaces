@@ -17,7 +17,6 @@ public class FileTreeItem extends TreeItem<String> {
         }else {
             this.setGraphic(crearImagen("/file.png"));
         }
-
     }
 
     public ImageView crearImagen(String fileName){
