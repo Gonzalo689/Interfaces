@@ -46,7 +46,6 @@ public class PrimaryController {
                     mensaje = "Archivo modificado";
                     guardarTexto();
                 }
-
                 Alert a = new Alert(Alert.AlertType.INFORMATION);
                 a.setHeaderText(mensaje);
                 a.setContentText(null);
