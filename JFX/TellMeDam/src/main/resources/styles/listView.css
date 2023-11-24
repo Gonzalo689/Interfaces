@@ -1,0 +1,23 @@
+/* Estilo base para el ListView */
+.list-view {
+    -fx-background-color: #393b39; /* Verde principal */
+    -fx-control-inner-background: derive(-fx-background, 20%);
+    -fx-padding: 10;
+}
+
+/* Estilo para las celdas del ListView */
+.list-cell {
+    -fx-text-fill: white; /* Color del texto en celdas */
+}
+
+/* Estilo para la celda seleccionada */
+.list-cell:selected {
+    -fx-background-color: #1e8449; /* Verde más oscuro para la celda seleccionada */
+}
+
+/* Estilo para el foco en la celda seleccionada */
+.list-cell:focused {
+    -fx-background-color: #1e8449; /* Verde más oscuro para el foco en la celda seleccionada */
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3 3 2 2, 3 3 2 2, 1;
+}

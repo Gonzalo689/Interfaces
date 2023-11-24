@@ -1,0 +1,22 @@
+.outline-button {
+	-fx-background-color:  #6f876f;
+	-fx-border-color: #f5f7f5;
+	-fx-border-radius: 3;
+	 -fx-text-fill: #f5f7f5;
+}
+.outline-button:hover,
+.outline-button:focused {
+	-fx-background-color:#0f7a0f;
+	-fx-text-fill: white;
+}
+.mfx-text-field {
+	-fx-min-width: 130;
+	-fx-font-family: 'Visby Round CF Medium';
+	-fx-border-color: -mfx-green;
+
+}
+
+.mfx-text-field .floating-text {
+	-fx-font-family: 'Visby Round CF Medium';
+	 -fx-text-fill: black;
+}

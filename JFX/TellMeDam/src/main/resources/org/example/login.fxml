@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #6f876f;" stylesheets="@../../styles/Button.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets bottom="-50.0" />
+         </VBox.margin>
+         <image>
+            <Image url="@../../Image/LOGO.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="116.0" layoutY="30.0" text="Bienvenido TellMeDam" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Label>
+
+      <MFXTextField fx:id="emailLogin" floatMode="BORDER" floatingText="Email" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <MFXPasswordField fx:id="contrasenaLogin" floatMode="BORDER" floatingText="Contraseña" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <MFXProgressBar fx:id="progressSpinner" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+      <MFXButton buttonType="RAISED" minHeight="27.0" minWidth="70.0" onAction="#login" styleClass="outline-button" text="Iniciar Sesion" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <MFXButton buttonType="RAISED" minHeight="27.0" minWidth="70.0" onAction="#switchToRegister" styleClass="outline-button" text="Crear Nueva Cuenta" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
