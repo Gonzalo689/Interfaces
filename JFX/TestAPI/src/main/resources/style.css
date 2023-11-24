@@ -1,0 +1,24 @@
+#titleLabel {
+   -fx-font-size: 20;
+   -fx-font-weight: bold;
+}
+#startDateLabel{
+    -fx-font-style: italic;
+    -fx-text-fill: #555;
+}
+#ageRatingLabel{
+    -fx-font-weight: bold;
+    -fx-text-fill: #900;
+}
+#episodeCountLabel{
+    -fx-font-weight: bold;
+}
+#showTypeLabel{
+    -fx-font-weight: bold;
+}
+
+VBox{
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 10;
+    -fx-border-color: #ddd;
+}
