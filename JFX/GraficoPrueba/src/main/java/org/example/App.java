@@ -4,9 +4,15 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.BarChart;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * JavaFX App
@@ -17,14 +23,11 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 700, 500);
+
+        scene = new Scene(loadFXML("primary"), 640, 480);
         stage.setScene(scene);
         stage.show();
-    }
-    @Override
-    public void stop() throws Exception {
-        PrimaryController.lr.cerrarConexion();
-        super.stop();
+
     }
 
     static void setRoot(String fxml) throws IOException {
@@ -39,7 +42,5 @@ public class App extends Application {
     public static void main(String[] args) {
         launch();
     }
-
-
 
 }

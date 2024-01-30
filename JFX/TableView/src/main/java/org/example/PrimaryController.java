@@ -21,7 +21,7 @@ public class PrimaryController {
     private TableView<Producto> tableView;
     @FXML
     private TextField busqueda;
-    private ObservableList<Producto> listaProducto = FXCollections.observableArrayList();;
+    private ObservableList<Producto> listaProducto = FXCollections.observableArrayList();
 
     public void initialize() {
        cargarColumnas();
