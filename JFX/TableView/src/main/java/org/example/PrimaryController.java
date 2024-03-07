@@ -18,7 +18,7 @@ import javafx.scene.control.cell.TextFieldTableCell;
 public class PrimaryController {
 
     @FXML
-    private TableView<Producto> tableView;
+    private TableView tableView;
     @FXML
     private TextField busqueda;
     private ObservableList<Producto> listaProducto = FXCollections.observableArrayList();;

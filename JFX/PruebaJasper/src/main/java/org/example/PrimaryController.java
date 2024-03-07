@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.Map;
 
 import javafx.fxml.FXML;
 import net.sf.jasperreports.engine.*;
@@ -18,6 +19,7 @@ public class PrimaryController {
     @FXML
     private void switchToSecondary() throws IOException {
         InputStream reportFile = getClass().getResourceAsStream("Techmart.jrxml");
+
         try {
             JasperReport jasperReport = JasperCompileManager.compileReport(reportFile);
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, crearConexion());
